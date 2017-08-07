@@ -42,7 +42,7 @@
 							</div>
 						</div>
 						<div class="content has-text-left">
-							<h2>Article Title</h2>
+							<router-link :to="{ name: 'blogSingle' }"><h2>Article Title</h2></router-link>
 							<p class="excerpt">In the next couple of months we’ll be
 							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
 						<div class="columns author">
