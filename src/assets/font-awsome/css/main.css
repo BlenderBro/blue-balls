@@ -1,0 +1,82 @@
+/*AUTHOR: Vlad Dobrescu <vlad.s.dobrescu@gmail.com>
+*LISCENCE: PRIVATE
+*/
+
+/*--------------------------
+* 		:ROOT Colors
+----------------------------*/
+:root {
+	--mov: 		#52489C;
+	--albastru: #4062BB;
+	--aqua:		#59C3C3;
+	--gri:		#EBEBEB;
+	--rosu: 	#F45B69;
+	--titlu: 	#3c4859;
+	--subtitlu: #49586d;
+	--text: 	#9facbd;
+}
+
+/*--------------------------
+* 		TYPOGRAPHY
+----------------------------*/
+html *{
+	font-family: 'Nunito Sans', sans-serif !important;
+}
+@font-face {
+
+ font-family: 'FontAwesome';
+ src: url('/assets/fonts/fontawesome-webfont.eot');
+ src: url('/assets/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/fontawesome-webfont.woff') format('woff'),
+      url('/assets/fonts/fontawesome-webfont.ttf') format('truetype'),
+      url('/assets/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+ }
+h1, h2, h3, h4, h5 {
+	color: var(--titlu);
+}
+h3{
+	font-size: 21px;
+}
+p {
+	color: #3c4859;
+}
+
+
+/*--------------------------
+* 		OVERWRITES
+----------------------------*/
+.title {
+	color: var(--titlu);
+}
+.subtitle {
+	color: #49586d;
+	/*font-size: 26px*/
+}
+.navbar{
+	background-color: rgba(255, 255, 255, 0);
+}
+
+a{
+	color: var(--rosu);
+}
+a:hover{
+	color: var(--text);
+}
+.navbar-item.is-tab a{
+	color: var(--aqua);
+	font-weight: 600;
+	font-size: .9em;
+}
+.navbar-item.is-tab a:hover{
+	color: var(--text);
+}
+p.subtitle{
+	padding-top: 1em;
+}
+
+.row{
+	padding-top: 4em;
+	padding-bottom: 2em;
+}
