@@ -1,5 +1,6 @@
 <template lang="html">
 	<section class="blog">
+<!-- IMAGE -->
 		<div class="hero">
 			<div class="hero-body">
 				<div class="container">
@@ -11,6 +12,8 @@
 				</div>
 			</div>
 		</div>
+<!-- //IMAGE -->
+<!-- SEARCH -->
 		<div class="columns search">
 			<div class="column is-half is-offset-3">
 				<div class="field">
@@ -23,6 +26,7 @@
 				</div>
 			</div>
 		</div>
+<!-- //SEARCH -->
 		<div class="columns blog-content has-text-centered">
 			<div class="column">
 				<div class="card">
@@ -39,7 +43,41 @@
 						</div>
 						<div class="content has-text-left">
 							<h2>Article Title</h2>
-							<br>
+							<p class="excerpt">In the next couple of months we’ll be
+							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
+						<div class="columns author">
+							<div class="column is-3">
+								<figure class="image is-64x64">
+									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+								</figure>
+							</div>
+							<div class="column handle has-text-right">
+								<p class="title">{{test.name}}</p>
+								<p class="subtitle">{{test.state}}</p>
+							</div>
+						</div>
+
+							<small>Jul 27 - 2 min read</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+					<div class="card-image">
+						<figure class="image is-16by9">
+							<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+						</figure>
+					</div>
+					<div class="card-content">
+						<div class="media">
+							<div class="media-left">
+								<p class="tags">#css #php #javascript</p>
+							</div>
+						</div>
+						<div class="content has-text-left">
+							<h2>Article Title</h2>
+
 							<p class="excerpt">In the next couple of months we’ll be
 							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
 						<div class="columns author">
@@ -74,7 +112,7 @@
 						</div>
 						<div class="content has-text-left">
 							<h2>Article Title</h2>
-							<br>
+
 							<p class="excerpt">In the next couple of months we’ll be
 							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
 						<div class="columns author">
@@ -109,42 +147,7 @@
 						</div>
 						<div class="content has-text-left">
 							<h2>Article Title</h2>
-							<br>
-							<p class="excerpt">In the next couple of months we’ll be
-							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-						<div class="columns author">
-							<div class="column is-3">
-								<figure class="image is-64x64">
-									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-								</figure>
-							</div>
-							<div class="column handle has-text-right">
-								<p class="title">John Smith</p>
-								<p class="subtitle">@johnsmith</p>
-							</div>
-						</div>
 
-							<small>Jul 27 - 2 min read</small>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image is-16by9">
-							<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="media">
-							<div class="media-left">
-								<p class="tags">#css #php #javascript</p>
-							</div>
-						</div>
-						<div class="content has-text-left">
-							<h2>Article Title</h2>
-							<br>
 							<p class="excerpt">In the next couple of months we’ll be
 							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
 						<div class="columns author">
@@ -181,7 +184,7 @@
 						</div>
 						<div class="content has-text-left">
 							<h2>Article Title</h2>
-							<br>
+
 							<p class="excerpt">In the next couple of months we’ll be
 							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
 						<div class="columns author">
@@ -216,7 +219,7 @@
 						</div>
 						<div class="content has-text-left">
 							<h2>Article Title</h2>
-							<br>
+
 							<p class="excerpt">In the next couple of months we’ll be
 							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
 						<div class="columns author">
@@ -251,7 +254,7 @@
 						</div>
 						<div class="content has-text-left">
 							<h2>Article Title</h2>
-							<br>
+
 							<p class="excerpt">In the next couple of months we’ll be
 							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
 						<div class="columns author">
@@ -286,7 +289,7 @@
 						</div>
 						<div class="content has-text-left">
 							<h2>Article Title</h2>
-							<br>
+
 							<p class="excerpt">In the next couple of months we’ll be
 							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
 						<div class="columns author">
@@ -312,8 +315,24 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-	name: 'blog'
+	name: 'blog',
+
+	data: ()=>({
+		test: [],
+		errors: []
+	}),
+
+	created() {
+		axios.get('http://backend.app/api/test')
+			.then(response =>{
+				this.test = response.data
+		})
+		.catch(e => {
+			this.errors.push(e);
+		})
+	}
 }
 </script>
 
@@ -329,9 +348,9 @@ h2{
 	border: 1px solid;
 	border-color: var(--gri);
 	border-radius: 12px;
-	-webkit-box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);
+	/*-webkit-box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);
 	-moz-box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);
-	box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);
+	box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);*/
 }
 .card-content{
 	padding-top: 4px;
@@ -371,6 +390,9 @@ h2{
 	background-color: var(--text);
 	border-radius: 0px 10px 10px 0px;
 }
+p{
+	padding-top: 0px !important;
+}
 p.tags{
 	font-family: 'Lora', serif !important;
 	color: var(--text);
@@ -385,10 +407,14 @@ p.title{
 	font-family: 'Lora', serif !important;
 	color: var(--titlu);
 }
-p.subtitle{
+.subtitle{
 	font-family: 'Lora', serif !important;
 	color: var(--subtitlu);
-	font-size: .8em
+	font-size: .8em;
+	margin-top: 10px;
+}
+.title:not(.is-spaced)+.subtitle{
+	margin-top: 0px;
 }
 small{
 	font-family: 'Lora', serif !important;
