@@ -14,7 +14,7 @@
 		</div>
 <!-- //IMAGE -->
 <!-- SEARCH -->
-		<div class="columns search">
+		<div class="columns is-mobile search">
 			<div class="column is-half is-offset-3">
 				<div class="field">
 					<p class="control has-icons-left has-icons-right">
@@ -27,8 +27,8 @@
 			</div>
 		</div>
 <!-- //SEARCH -->
-		<div class="columns blog-content has-text-centered">
-			<div class="column">
+		<div class="columns is-mobile blog-content has-text-centered">
+			<div class="column is-mobile">
 				<div class="card">
 					<div class="card-image">
 						<figure class="image is-16by9">
@@ -62,7 +62,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="column">
+			<div class="column is-mobile">
 				<div class="card">
 					<div class="card-image">
 						<figure class="image is-16by9">
@@ -97,42 +97,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="column">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image is-16by9">
-							<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="media">
-							<div class="media-left">
-								<p class="tags">#css #php #javascript</p>
-							</div>
-						</div>
-						<div class="content has-text-left">
-							<h2>Article Title</h2>
-
-							<p class="excerpt">In the next couple of months we’ll be
-							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-						<div class="columns author">
-							<div class="column is-3">
-								<figure class="image is-64x64">
-									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-								</figure>
-							</div>
-							<div class="column handle has-text-right">
-								<p class="title">John Smith</p>
-								<p class="subtitle">@johnsmith</p>
-							</div>
-						</div>
-
-							<small>Jul 27 - 2 min read</small>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="column">
+			<div class="column is-mobile">
 				<div class="card">
 					<div class="card-image">
 						<figure class="image is-16by9">
@@ -168,147 +133,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="columns blog-content has-text-centered">
-			<div class="column">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image is-16by9">
-							<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="media">
-							<div class="media-left">
-								<p class="tags">#css #php #javascript</p>
-							</div>
-						</div>
-						<div class="content has-text-left">
-							<h2>Article Title</h2>
-
-							<p class="excerpt">In the next couple of months we’ll be
-							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-						<div class="columns author">
-							<div class="column is-3">
-								<figure class="image is-64x64">
-									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-								</figure>
-							</div>
-							<div class="column handle has-text-right">
-								<p class="title">John Smith</p>
-								<p class="subtitle">@johnsmith</p>
-							</div>
-						</div>
-
-							<small>Jul 27 - 2 min read</small>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image is-16by9">
-							<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="media">
-							<div class="media-left">
-								<p class="tags">#css #php #javascript</p>
-							</div>
-						</div>
-						<div class="content has-text-left">
-							<h2>Article Title</h2>
-
-							<p class="excerpt">In the next couple of months we’ll be
-							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-						<div class="columns author">
-							<div class="column is-3">
-								<figure class="image is-64x64">
-									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-								</figure>
-							</div>
-							<div class="column handle has-text-right">
-								<p class="title">John Smith</p>
-								<p class="subtitle">@johnsmith</p>
-							</div>
-						</div>
-
-							<small>Jul 27 - 2 min read</small>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image is-16by9">
-							<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="media">
-							<div class="media-left">
-								<p class="tags">#css #php #javascript</p>
-							</div>
-						</div>
-						<div class="content has-text-left">
-							<h2>Article Title</h2>
-
-							<p class="excerpt">In the next couple of months we’ll be
-							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-						<div class="columns author">
-							<div class="column is-3">
-								<figure class="image is-64x64">
-									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-								</figure>
-							</div>
-							<div class="column handle has-text-right">
-								<p class="title">John Smith</p>
-								<p class="subtitle">@johnsmith</p>
-							</div>
-						</div>
-
-							<small>Jul 27 - 2 min read</small>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image is-16by9">
-							<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="media">
-							<div class="media-left">
-								<p class="tags">#css #php #javascript</p>
-							</div>
-						</div>
-						<div class="content has-text-left">
-							<h2>Article Title</h2>
-
-							<p class="excerpt">In the next couple of months we’ll be
-							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-						<div class="columns author">
-							<div class="column is-3">
-								<figure class="image is-64x64">
-									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-								</figure>
-							</div>
-							<div class="column handle has-text-right">
-								<p class="title">John Smith</p>
-								<p class="subtitle">@johnsmith</p>
-							</div>
-						</div>
-
-							<small>Jul 27 - 2 min read</small>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
 
@@ -318,12 +142,10 @@
 import axios from 'axios'
 export default {
 	name: 'blog',
-
 	data: ()=>({
 		test: [],
 		errors: []
 	}),
-
 	created() {
 		axios.get('http://backend.app/api/test')
 			.then(response =>{
@@ -348,6 +170,8 @@ h2{
 	border: 1px solid;
 	border-color: var(--gri);
 	border-radius: 12px;
+	/*max-width: 30%;*/
+	display: inline-block;
 	/*-webkit-box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);
 	-moz-box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);
 	box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);*/

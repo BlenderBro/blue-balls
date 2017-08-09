@@ -2,12 +2,12 @@
 	<div class="single">
 		<section>
 			<div class="columns is-mobile is-centered">
-			<div class="column is-8 is-narrow is-full-mobile">
+				<div class="column is-8 is-narrow is-full-mobile">
 				<div class="box">
 					<article class="media">
 						<div class="media-left">
 							<figure class="image is-96x96">
-								<img class="img-circle" src="http://bulma.io/images/placeholders/128x128.png" alt="Image">
+								<img class="img-circle" src="/static/img/auth.jpg" alt="Image">
 							</figure>
 						</div>
 						<div class="media-content">
@@ -18,7 +18,7 @@
 									<img class="social" src="/static/img/svg/twitter.svg" alt="Twitter">
 									<img class="social" src="/static/img/svg/linkedin.svg" alt="LinkedIn"></small>
 									<br>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+									<p class="is-hidden-mobile">Descriere sit amet, consectetur adipiscing elit. <br>Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.<p>
 								</p>
 							</div>
 						</div>
@@ -26,16 +26,19 @@
 				</div>
 				<h1 class="title">Are Notifications A Dark Pattern?</h1>
 			</div>
-		</div>
+			</div>
 		</section>
-		<section class="is-single">
+		<section class="is-single is-mobile is-centered">
 			<!-- IMAGE -->
 					<div class="hero">
-						<img src="/static/img/place-gri.jpg" alt="">
+						<!-- <img src="/static/img/place-gri.jpg" alt=""> -->
+						<img src="/static/img/suit-hero.jpg" alt="Hero Article Image">
+
 					</div>
 			<!-- //IMAGE -->
-			<div class="columns">
-				<div class="column is-8 is-offset-2 body">
+			<div class="columns is-mobile">
+
+				<div id="target" class="column is-8 is-offset-2 body">
 					<p>Have you ever had a nightmare where you were literally drowning in little red notification badges?
 					I did once, and it got me thinking: what actually are notifications? And are they just another dark pattern — a
 					form of coercion and online trickery? In this article, I explore the phenomenon of “pseudo-notifications”, and
@@ -65,13 +68,31 @@
 					to engage with their product turned notifications into an annoyance — a manipulative, destructive dark pattern?</p>
 				</div>
 			</div>
+			<div class="column is-8 is-offset-2" id="disqus_thread">
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			</div>
 		</section>
 	</div>
 </template>
 
 <script>
-export default {
-	name: 'blogSingle',
+	//Disqus Act. Script
+	var disqus_developer = 1;
+	var disqus_url = '{{ url('/') }}';
+	var disqus_config = function () {
+		this.page.url = "http://localhost:8080/blog/single";  // Replace PAGE_URL with your page's canonical URL variable
+	};
+	(function () { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://foobardigital.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+	$(document).ready(function(){
+	    $(window).scrollTop(0);
+	});
+	export default {
+		name: 'blogSingle',
 }
 </script>
 
@@ -85,6 +106,20 @@ export default {
     line-height: 1.58;
     letter-spacing: -.003em;
 }
+/*FAB*/
+.fab{
+	border-radius: 50%;
+	background-color: pink;
+	width: 60px;
+	height: 60px;
+	left: 24px;
+	top: 7.5em;
+	position: fixed;
+}
+.fab:hover{
+	background-color: red;
+}
+/*//FAB*/
 h1.title{
 	padding-bottom: .7em;
 	font-family: 'Lora', serif !important;
@@ -125,4 +160,12 @@ img.social{
 .hero{
 	padding-bottom: 2em;
 }
+@media screen and (max-width: 430px){
+	p{
+		font-size: 1em !important;
+		padding: .4em 0 .4em 0;
+	}
+
+}
+
 </style>

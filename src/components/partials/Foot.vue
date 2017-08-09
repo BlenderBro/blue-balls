@@ -1,5 +1,5 @@
 <template lang="html">
-	<footer class="footer">
+	<footer class="footer is-mobile">
 		<div class="container">
 			<div class="columns">
 				<div class="column is-three-quarters">
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-	name: 'Footer'
+	name: 'Foot'
 }
 </script>
 

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import lost_page from '@/components/errors/404'
 import LandingPage from '@/components/pages/LandingPage'
 import Estimator from '@/components/pages/Estimator'
@@ -15,6 +16,6 @@ export default new Router({
 		{ path: '/', name: 'LandingPage', component: LandingPage },
 		{ path: '/estimator', name: 'Estimator', component: Estimator },
 		{ path: '/blog', name: 'blog', component: Blog },
-		{ path: '/blog/single', name: 'blogSingle', component: blogSingle }		
+		{ path: '/blog/single', name: 'blogSingle', component: blogSingle }
 	]
 })

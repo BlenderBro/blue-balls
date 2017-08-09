@@ -5,10 +5,13 @@ import App from './App'
 import router from './router'
 import NProgress from 'nprogress'
 
+var VueMaterial = require('vue-material')
+
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
 	NProgress.start();
+	window.scrollTo(0,0);
 	next();
 	NProgress.done()
 })
