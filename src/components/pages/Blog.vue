@@ -27,8 +27,8 @@
 			</div>
 		</div>
 <!-- //SEARCH -->
-		<div class="columns is-mobile blog-content has-text-centered">
-			<div class="column is-mobile">
+		<div class="columns blog-content has-text-centered">
+			<div class="column">
 				<div class="card">
 					<div class="card-image">
 						<figure class="image is-16by9">
@@ -46,7 +46,7 @@
 							<p class="excerpt">In the next couple of months we’ll be
 							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
 						<div class="columns author">
-							<div class="column is-3">
+							<div class="column is-mobi is-3">
 								<figure class="image is-64x64">
 									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
 								</figure>
@@ -62,7 +62,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="column is-mobile">
+			<div class="column">
 				<div class="card">
 					<div class="card-image">
 						<figure class="image is-16by9">
@@ -81,7 +81,7 @@
 							<p class="excerpt">In the next couple of months we’ll be
 							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
 						<div class="columns author">
-							<div class="column is-3">
+							<div class="column is-mobile is-3">
 								<figure class="image is-64x64">
 									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
 								</figure>
@@ -97,7 +97,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="column is-mobile">
+			<div class="column">
 				<div class="card">
 					<div class="card-image">
 						<figure class="image is-16by9">

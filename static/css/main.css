@@ -118,10 +118,21 @@ p.subtitle{
 		font-size: 1.2em !important;
 	}
 	.img-circle{
-		max-width: 70%;
+		max-width: 90%;
 		float: left;
 		margin-top: 10px;
 	}
 
 	/* // BLOG PAGE STYLES */
+}
+@media screen and (max-width: 768px){
+	.img-circle{
+		max-width: 90%;
+		float: left;
+		margin-top: 90px;
+	}
+
+}
+@media screen and (max-width: 430px){
+	
 }

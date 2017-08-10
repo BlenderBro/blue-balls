@@ -3,27 +3,27 @@
 		<section>
 			<div class="columns is-mobile is-centered">
 				<div class="column is-8 is-narrow is-full-mobile">
-				<div class="box">
-					<article class="media">
-						<div class="media-left">
-							<figure class="image is-96x96">
-								<img class="img-circle" src="/static/img/auth.jpg" alt="Image">
-							</figure>
-						</div>
-						<div class="media-content">
-							<div class="content">
-								<p>
-									<strong>John Smith</strong>
-									<small><img class="social" src="/static/img/svg/facebook.svg" alt="Facebook">
-									<img class="social" src="/static/img/svg/twitter.svg" alt="Twitter">
-									<img class="social" src="/static/img/svg/linkedin.svg" alt="LinkedIn"></small>
-									<br>
-									<p class="is-hidden-mobile">Descriere sit amet, consectetur adipiscing elit. <br>Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.<p>
-								</p>
+					<div class="box">
+						<article class="media">
+							<div class="media-left">
+								<figure class="image is-96x96">
+									<img class="img-circle" src="/static/img/auth.jpg" alt="Image">
+								</figure>
 							</div>
-						</div>
-					</article>
-				</div>
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>Vlad Dobrescu</strong>
+										<small><img class="social" src="/static/img/svg/facebook.svg" alt="Facebook">
+										<img class="social" src="/static/img/svg/twitter.svg" alt="Twitter">
+										<img class="social" src="/static/img/svg/linkedin.svg" alt="LinkedIn"></small>
+										<br>
+										<p class="is-hidden-mobile">Descriere sit amet, consectetur adipiscing elit. <br>Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.<p>
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
 				<h1 class="title">Are Notifications A Dark Pattern?</h1>
 			</div>
 			</div>
@@ -36,9 +36,11 @@
 
 					</div>
 			<!-- //IMAGE -->
-			<div class="columns is-mobile">
+			<div class="columns is-mobile aligner">
 
-				<div id="target" class="column is-8 is-offset-2 body">
+				<!-- <div id="target" class="target column is-6 is-offset-3 body"> -->
+				<div id="target" class="column is-6 is-offset-3 body">
+
 					<p>Have you ever had a nightmare where you were literally drowning in little red notification badges?
 					I did once, and it got me thinking: what actually are notifications? And are they just another dark pattern — a
 					form of coercion and online trickery? In this article, I explore the phenomenon of “pseudo-notifications”, and
@@ -76,6 +78,20 @@
 </template>
 
 <script>
+
+//Class swap for responsiveness & crap
+$(document).ready(function(){
+	var target = $('#target');
+	var breakp = $(window).width();
+	var cls = 'is-6 is-offset-3'
+	if ( breakp < 1264 ) {
+		target.removeClass('is-6 is-offset-3');
+		target.addClass('is-8 is-offset-2');
+		console.log(target +'scoped');
+	}
+	console.log(target);
+})
+
 	//Disqus Act. Script
 	var disqus_developer = 1;
 	var disqus_url = '{{ url('/') }}';
@@ -91,12 +107,15 @@
 	$(document).ready(function(){
 	    $(window).scrollTop(0);
 	});
+
+
 	export default {
 		name: 'blogSingle',
 }
 </script>
 
 <style scoped lang="css">
+
 .body p{
 	color: var(--title);
 	font-size: 1.2em;
@@ -107,18 +126,7 @@
     letter-spacing: -.003em;
 }
 /*FAB*/
-.fab{
-	border-radius: 50%;
-	background-color: pink;
-	width: 60px;
-	height: 60px;
-	left: 24px;
-	top: 7.5em;
-	position: fixed;
-}
-.fab:hover{
-	background-color: red;
-}
+
 /*//FAB*/
 h1.title{
 	padding-bottom: .7em;
@@ -167,5 +175,4 @@ img.social{
 	}
 
 }
-
 </style>
