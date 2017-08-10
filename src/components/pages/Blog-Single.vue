@@ -80,18 +80,14 @@
 <script>
 
 //Class swap for responsiveness & crap
-$(document).ready(function(){
+var breakp = $(window).width();
+$(document).ready(function hotSwap(){
 	var target = $('#target');
-	var breakp = $(window).width();
-	var cls = 'is-6 is-offset-3'
 	if ( breakp < 1264 ) {
 		target.removeClass('is-6 is-offset-3');
 		target.addClass('is-8 is-offset-2');
-		console.log(target +'scoped');
 	}
-	console.log(target);
-})
-
+});
 	//Disqus Act. Script
 	var disqus_developer = 1;
 	var disqus_url = '{{ url('/') }}';
