@@ -1,5 +1,5 @@
 <template lang="html">
-	<section class="blog">
+	<section style="background-color:#efefef" class="blog">
 <!-- IMAGE -->
 		<div class="hero">
 			<div class="hero-body">
@@ -27,112 +27,145 @@
 			</div>
 		</div>
 <!-- //SEARCH -->
-		<div class="columns blog-content has-text-centered">
-			<div class="column">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image is-16by9">
-							<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="media">
-							<div class="media-left">
-								<p class="tags">#css #php #javascript</p>
-							</div>
+		<div class="container">
+			<div class="columns is-multiline">
+				<div class="column is-4">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-16by9">
+								<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+							</figure>
 						</div>
-						<div class="content has-text-left">
-							<router-link :to="{ name: 'blogSingle' }"><h2>Article Title</h2></router-link>
-							<p class="excerpt">In the next couple of months we’ll be
-							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-						<div class="columns author">
-							<div class="column is-mobi is-3">
-								<figure class="image is-64x64">
-									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-								</figure>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-left">
+									<p class="tags">#css #php #javascript</p>
+								</div>
 							</div>
-							<div class="column handle has-text-right">
-								<p class="title">{{test.name}}</p>
-								<p class="subtitle">{{test.state}}</p>
+							<div class="content has-text-left">
+								<router-link :to="{ name: 'blogSingle' }"><h2>Article Title</h2></router-link>
+								<p class="excerpt">In the next couple of months we’ll be
+								reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
+							<div class="columns author">
+								<div class="column is-mobi is-3">
+									<figure class="image is-64x64">
+										<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+									</figure>
+								</div>
+								<div class="column handle has-text-right">
+									<p class="title">Vlad Dobrescu</p>
+									<p class="subtitle">@vlad_dobrescu</p>
+								</div>
 							</div>
-						</div>
 
-							<small>Jul 27 - 2 min read</small>
+								<small>Jul 27 - 2 min read</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-4">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-16by9">
+								<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-left">
+									<p class="tags">#css #php #javascript</p>
+								</div>
+							</div>
+							<div class="content has-text-left">
+								<router-link :to="{ name: 'blogSingle' }"><h2>Article Title</h2></router-link>
+								<p class="excerpt">In the next couple of months we’ll be
+								reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
+							<div class="columns author">
+								<div class="column is-mobi is-3">
+									<figure class="image is-64x64">
+										<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+									</figure>
+								</div>
+								<div class="column handle has-text-right">
+									<p class="title">Vlad Dobrescu</p>
+									<p class="subtitle">@vlad_dobrescu</p>
+								</div>
+							</div>
+
+								<small>Jul 27 - 2 min read</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-4">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-16by9">
+								<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-left">
+									<p class="tags">#css #php #javascript</p>
+								</div>
+							</div>
+							<div class="content has-text-left">
+								<router-link :to="{ name: 'blogSingle' }"><h2>Article Title</h2></router-link>
+								<p class="excerpt">In the next couple of months we’ll be
+								reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
+							<div class="columns author">
+								<div class="column is-mobi is-3">
+									<figure class="image is-64x64">
+										<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+									</figure>
+								</div>
+								<div class="column handle has-text-right">
+									<p class="title">Vlad Dobrescu</p>
+									<p class="subtitle">@vlad_dobrescu</p>
+								</div>
+							</div>
+
+								<small>Jul 27 - 2 min read</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-4">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-16by9">
+								<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-left">
+									<p class="tags">#css #php #javascript</p>
+								</div>
+							</div>
+							<div class="content has-text-left">
+								<router-link :to="{ name: 'blogSingle' }"><h2>Article Title</h2></router-link>
+								<p class="excerpt">In the next couple of months we’ll be
+								reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
+							<div class="columns author">
+								<div class="column is-mobi is-3">
+									<figure class="image is-64x64">
+										<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+									</figure>
+								</div>
+								<div class="column handle has-text-right">
+									<p class="title">Vlad Dobrescu</p>
+									<p class="subtitle">@vlad_dobrescu</p>
+								</div>
+							</div>
+
+								<small>Jul 27 - 2 min read</small>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="column">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image is-16by9">
-							<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="media">
-							<div class="media-left">
-								<p class="tags">#css #php #javascript</p>
-							</div>
-						</div>
-						<div class="content has-text-left">
-							<h2>Article Title</h2>
-
-							<p class="excerpt">In the next couple of months we’ll be
-							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-						<div class="columns author">
-							<div class="column is-mobile is-3">
-								<figure class="image is-64x64">
-									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-								</figure>
-							</div>
-							<div class="column handle has-text-right">
-								<p class="title">John Smith</p>
-								<p class="subtitle">@johnsmith</p>
-							</div>
-						</div>
-
-							<small>Jul 27 - 2 min read</small>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="card">
-					<div class="card-image">
-						<figure class="image is-16by9">
-							<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-						</figure>
-					</div>
-					<div class="card-content">
-						<div class="media">
-							<div class="media-left">
-								<p class="tags">#css #php #javascript</p>
-							</div>
-						</div>
-						<div class="content has-text-left">
-							<h2>Article Title</h2>
-
-							<p class="excerpt">In the next couple of months we’ll be
-							reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-						<div class="columns author">
-							<div class="column is-3">
-								<figure class="image is-64x64">
-									<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-								</figure>
-							</div>
-							<div class="column handle has-text-right">
-								<p class="title">John Smith</p>
-								<p class="subtitle">@johnsmith</p>
-							</div>
-						</div>
-
-							<small>Jul 27 - 2 min read</small>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		</div>
 	</section>
 
@@ -159,6 +192,9 @@ export default {
 </script>
 
 <style scoped lang="css">
+.column.is-4{
+	display: inline-block;
+}
 h2{
 	font-size: 1.5em;
 }
@@ -167,14 +203,9 @@ h2{
 }
 .card{
 	padding: 14px;
-	border: 1px solid;
-	border-color: var(--gri);
 	border-radius: 12px;
-	/*max-width: 30%;*/
 	display: inline-block;
-	/*-webkit-box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);
-	-moz-box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);
-	box-shadow: 20px 20px 18px -15px rgba(0,0,0,0.37);*/
+	box-shadow: none;
 }
 .card-content{
 	padding-top: 4px;
@@ -186,6 +217,8 @@ h2{
 .search{
 	background-color: #d4d4d4;
 	height: 8em;
+	margin-left: 0;
+	margin-right: 0;
 }
 .search input{
 	border-radius: 10px;

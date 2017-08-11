@@ -21,16 +21,17 @@
 ----------------------------*/
 html *{
 	font-family: 'Nunito Sans', sans-serif !important;
+
 }
 @font-face {
- font-family: 'FontAwesome';
- src: url('/assets/font-awsome/fonts/fontawesome-webfont.eot');
- src: url('/assets/font-awsome/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-      url('/assets/font-awsome/fonts/fontawesome-webfont.woff') format('woff'),
-      url('/assets/font-awsome/fonts/fontawesome-webfont.ttf') format('truetype'),
-      url('/assets/font-awsome/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
- font-weight: normal;
- font-style: normal;
+	font-family: 'FontAwesome';
+	src: url('/assets/font-awsome/fonts/fontawesome-webfont.eot');
+	src: url('/assets/font-awsome/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/assets/font-awsome/fonts/fontawesome-webfont.woff') format('woff'),
+		 url('/assets/font-awsome/fonts/fontawesome-webfont.ttf') format('truetype'),
+		 url('/assets/font-awsome/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
  }
 
 h1, h2, h3, h4, h5 {
@@ -103,9 +104,11 @@ p.subtitle{
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: var(--rosu);
 }
-
+.columns.recomended{
+	background-color: #fafafa !important;
+}
 @media screen and (max-width: 930px){
 	/*BLOG PAGE STYLES*/
 	p.tags{
@@ -134,5 +137,9 @@ p.subtitle{
 
 }
 @media screen and (max-width: 430px){
-	
+	.footer ul li{
+		padding-top: 1em !important;
+		margin-left: 5px;
+		font-size: .9em;
+	}
 }

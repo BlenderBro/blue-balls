@@ -7,6 +7,7 @@ import LandingPage from '@/components/pages/LandingPage'
 import Estimator from '@/components/pages/Estimator'
 import Blog from '@/components/pages/Blog'
 import blogSingle from '@/components/pages/Blog-Single'
+import contact from '@/components/pages/Contact'
 
 Vue.use(Router)
 
@@ -16,6 +17,7 @@ export default new Router({
 		{ path: '*', component: lost_page },
 		{ path: '/login', component: login},
 		{ path: '/', name: 'LandingPage', component: LandingPage },
+		{ path: '/contact', name: 'contact', component: contact },
 		{ path: '/estimator', name: 'Estimator', component: Estimator },
 		{ path: '/blog', name: 'blog', component: Blog },
 		{ path: '/blog/single', name: 'blogSingle', component: blogSingle }

@@ -7,18 +7,18 @@
 						<article class="media">
 							<div class="media-left">
 								<figure class="image is-96x96">
-									<img class="img-circle" src="/static/img/auth.jpg" alt="Image">
+									<img class="auth-avatar img-circle" src="/static/img/auth.jpg" alt="Image">
 								</figure>
 							</div>
 							<div class="media-content">
 								<div class="content">
-									<p>
+									<p id="name">
 										<strong>Vlad Dobrescu</strong>
 										<small><img class="social" src="/static/img/svg/facebook.svg" alt="Facebook">
 										<img class="social" src="/static/img/svg/twitter.svg" alt="Twitter">
 										<img class="social" src="/static/img/svg/linkedin.svg" alt="LinkedIn"></small>
 										<br>
-										<p class="is-hidden-mobile">Descriere sit amet, consectetur adipiscing elit. <br>Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.<p>
+										<p class="auth-about is-hidden-mobile">Descriere sit amet, consectetur adipiscing elit. <br>Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.<p>
 									</p>
 								</div>
 							</div>
@@ -33,12 +33,9 @@
 					<div class="hero">
 						<!-- <img src="/static/img/place-gri.jpg" alt=""> -->
 						<img src="/static/img/suit-hero.jpg" alt="Hero Article Image">
-
 					</div>
 			<!-- //IMAGE -->
 			<div class="columns is-mobile aligner">
-
-				<!-- <div id="target" class="target column is-6 is-offset-3 body"> -->
 				<div id="target" class="column is-6 is-offset-3 body">
 
 					<p>Have you ever had a nightmare where you were literally drowning in little red notification badges?
@@ -70,6 +67,106 @@
 					to engage with their product turned notifications into an annoyance — a manipulative, destructive dark pattern?</p>
 				</div>
 			</div>
+			<!-- TAGS -->
+			<div style="padding-bottom: 2em;" class="column is-multiline is-6 is-offset-3">
+				<div class="tags is-centered">
+					<span class="tag is-rounded">One</span>
+					<span class="tag is-rounded">Two</span>
+					<span class="tag is-rounded">Three</span>
+					<span class="tag is-rounded">Four</span>
+					<span class="tag is-rounded">Five</span>
+					<span class="tag is-rounded">Six</span>
+					<span class="tag is-rounded">Seven</span>
+					<span class="tag is-rounded">Eight</span>
+					<span class="tag is-rounded">Nine</span>
+					<span class="tag is-rounded">Ten</span>
+					<span class="tag is-rounded">Elevesn</span>
+				</div>
+			</div>
+			<!-- //TAGS -->
+			<!-- RECOMENDED -->
+			<section class="rec">
+				<div class="container">
+					<div class="columns is-centered is-multiline rec">
+						<div class="column is-3">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-16by9">
+										<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-left">
+										<router-link :to="{ name: 'blogSingle' }"><h2>Article Title uahfkagfagfkagfkagfkagfkagfkagfagf akgfakgf akhg</h2></router-link>
+										<div class="columns author">
+											<div class="column is-mobil is-3">
+												<figure class="image is-36x36">
+													<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+												</figure>
+											</div>
+											<div class="column handle has-text-right">
+												<p class="title">Vlad Dobrescu</p>
+												<p class="subtitle">@vlad_dobrescu</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column is-3">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-16by9">
+										<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-left">
+										<router-link :to="{ name: 'blogSingle' }"><h2>Article Title uahfkagfagfkagfkagfkagfkagfkagfagf akgfakgf akhg</h2></router-link>
+										<div class="columns author">
+											<div class="column is-mobil is-3">
+												<figure class="image is-36x36">
+													<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+												</figure>
+											</div>
+											<div class="column handle has-text-right">
+												<p class="title">Vlad Dobrescu</p>
+												<p class="subtitle">@vlad_dobrescu</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column is-3">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-16by9">
+										<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-left">
+										<router-link :to="{ name: 'blogSingle' }"><h2>Article Title uahfkagfagfkagfkagfkagfkagfkagfagf akgfakgf akhg</h2></router-link>
+										<div class="columns author">
+											<div class="column is-mobil is-3">
+												<figure class="image is-36x36">
+													<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+												</figure>
+											</div>
+											<div class="column handle has-text-right">
+												<p class="title">Vlad Dobrescu</p>
+												<p class="subtitle">@vlad_dobrescu</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //RECOMENDED  -->
 			<div class="column is-8 is-offset-2" id="disqus_thread">
 			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			</div>
@@ -111,7 +208,46 @@ $(document).ready(function hotSwap(){
 </script>
 
 <style scoped lang="css">
-
+.container.three{
+	/*width: 70%;*/
+}
+.rec{
+	background-color: #ebebeb;
+	padding: 1em 0 1em 0;
+}
+.author{
+	padding-top: 1em;
+	margin-bottom: 0;
+}
+.auth-about{
+	padding-top: 0;
+}
+#name{
+	padding-bottom: 0;
+}
+small{
+	font-size: .675em;
+}
+.card{
+	box-shadow: none;
+	border-radius: 10px;
+}
+.card-content{
+	padding-bottom: 1px;
+}
+.card.card-content p{
+	color: var(--text) !important;
+}
+.card-content h2{
+	font-size: 1.35em;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.column.handle.has-text-right p{
+	font-size: .7em;
+}
 .body p{
 	color: var(--title);
 	font-size: 1.2em;
@@ -148,6 +284,13 @@ p strong{
 }
 .img-circle{
 	border-radius: 50%;
+	margin-top: 0 !important;
+}
+figure img{
+	width: 36px;
+}
+figure img.auth-avatar{
+	width: auto;
 }
 small{
 	padding-left: 2em;

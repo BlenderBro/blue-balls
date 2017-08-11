@@ -42,7 +42,7 @@
 				<div class="navbar-item is-tab has-text-centered"><a href="#">About</a></div>
 				<div class="navbar-item is-tab has-text-centered"><a href="#">Services</a></div>
 				<div class="navbar-item is-tab has-text-centered"><router-link :to="{ name: 'blog' }">Blog</router-link></div>
-				<div class="navbar-item is-tab has-text-centered"><a href="#">Contact</a></div>
+				<div class="navbar-item is-tab has-text-centered"><router-link :to="{ name: 'contact' }">Contact</router-link></div>
 			</div>
 		</div>
 	</nav>

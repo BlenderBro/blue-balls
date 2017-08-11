@@ -10,7 +10,7 @@
 						<li><a href="#">Privacy Policy</a></li>
 					</ul>
 				</div>
-				<div class="column">
+				<div class="column has-text-right">
 					<ul class="copyright">
 						<li>© Foobar Digital 2017</li>
 					</ul>

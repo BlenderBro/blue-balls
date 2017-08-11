@@ -41,7 +41,18 @@ export default {
 		padding-top: 1.2em;
 	}
 	.button.is-primary{
+		font-family: 'Roboto Condensed', sans-serif !important;
 		background-color: var(--aqua);
-		border-radius: 8px;
+		border: none;
+		cursor: pointer;
+		-webkit-font-smoothing: antialiased;
+		font-weight: 500;
+		outline: none;
+		-webkit-appearance: none;
+		border-radius: 7px;
+		transition: all .2s ease;
+		position: relative;
+		text-align: center;
+		line-height: 1em;
 	}
 </style>
