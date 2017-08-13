@@ -38,14 +38,15 @@
 
 <script>
 import axios from 'axios'
+import {domainRoot, userUrl, loginUrl, getHeader} from '../../api'
 import {clientID, clientSecret} from '../../env'
 export default {
 	name: 'login',
 	data() {
 		return {
 			login: {
-				email: 		'vlad.s.dobrescu@gmail.com',
-				password: 	'123456'
+				email: 		'',
+				password: 	''
 			}
 		}
 	},
@@ -58,8 +59,26 @@ export default {
 				scope: '',
 				username: this.login.email,
 				password: this.login.password
-			}
-			axios.post('http://backend.app/oauth/token', data).then(response => { console.log(response) })
+			};
+			const authUsr ={};
+			axios.post(loginUrl, data)
+                .then(response => {
+                    if(response.status === 200){
+                        authUsr.access_token =  response.data.access_token;
+                        authUsr.refresh_token = response.data.refresh_token;
+                        window.localStorage.setItem('authUser', JSON.stringify(authUsr));
+
+                        axios.get(userUrl, {headers: getHeader()})
+                            .then(response =>{
+                                console.log(response.data);
+                                authUsr.email = response.data.email;
+                                authUsr.name = response.data.name;
+                                window.localStorage.setItem('authUser', JSON.stringify(authUsr));
+                                window.location.reload(); // dirty method -> force refresh and class updates
+                                this.$router.push('/blog');
+                            });
+                    }
+                });
 		}
 	}
 }

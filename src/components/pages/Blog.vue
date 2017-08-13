@@ -1,19 +1,20 @@
 <template lang="html">
 	<section style="background-color:#efefef" class="blog">
-<!-- IMAGE -->
+        <!-- IMAGE -->
 		<div class="hero">
 			<div class="hero-body">
 				<div class="container">
 					<div class="columns has-text-centered">
 						<div class="column">
 							<h2 class="title">Blog</h2>
+							<button class="auth">Add Post</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-<!-- //IMAGE -->
-<!-- SEARCH -->
+        <!-- //IMAGE -->
+        <!-- SEARCH -->
 		<div class="columns is-mobile search">
 			<div class="column is-half is-offset-3">
 				<div class="field">
@@ -26,10 +27,10 @@
 				</div>
 			</div>
 		</div>
-<!-- //SEARCH -->
+        <!-- //SEARCH -->
 		<div class="container">
 			<div class="columns is-multiline">
-				<div class="column is-4">
+				<div v-for="post in posts" class="column is-4">
 					<div class="card">
 						<div class="card-image">
 							<figure class="image is-16by9">
@@ -43,111 +44,8 @@
 								</div>
 							</div>
 							<div class="content has-text-left">
-								<router-link :to="{ name: 'blogSingle' }"><h2>Article Title</h2></router-link>
-								<p class="excerpt">In the next couple of months we’ll be
-								reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-							<div class="columns author">
-								<div class="column is-mobi is-3">
-									<figure class="image is-64x64">
-										<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-									</figure>
-								</div>
-								<div class="column handle has-text-right">
-									<p class="title">Vlad Dobrescu</p>
-									<p class="subtitle">@vlad_dobrescu</p>
-								</div>
-							</div>
-
-								<small>Jul 27 - 2 min read</small>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="column is-4">
-					<div class="card">
-						<div class="card-image">
-							<figure class="image is-16by9">
-								<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-							</figure>
-						</div>
-						<div class="card-content">
-							<div class="media">
-								<div class="media-left">
-									<p class="tags">#css #php #javascript</p>
-								</div>
-							</div>
-							<div class="content has-text-left">
-								<router-link :to="{ name: 'blogSingle' }"><h2>Article Title</h2></router-link>
-								<p class="excerpt">In the next couple of months we’ll be
-								reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-							<div class="columns author">
-								<div class="column is-mobi is-3">
-									<figure class="image is-64x64">
-										<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-									</figure>
-								</div>
-								<div class="column handle has-text-right">
-									<p class="title">Vlad Dobrescu</p>
-									<p class="subtitle">@vlad_dobrescu</p>
-								</div>
-							</div>
-
-								<small>Jul 27 - 2 min read</small>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="column is-4">
-					<div class="card">
-						<div class="card-image">
-							<figure class="image is-16by9">
-								<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-							</figure>
-						</div>
-						<div class="card-content">
-							<div class="media">
-								<div class="media-left">
-									<p class="tags">#css #php #javascript</p>
-								</div>
-							</div>
-							<div class="content has-text-left">
-								<router-link :to="{ name: 'blogSingle' }"><h2>Article Title</h2></router-link>
-								<p class="excerpt">In the next couple of months we’ll be
-								reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
-							<div class="columns author">
-								<div class="column is-mobi is-3">
-									<figure class="image is-64x64">
-										<img class="img-circle" src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-									</figure>
-								</div>
-								<div class="column handle has-text-right">
-									<p class="title">Vlad Dobrescu</p>
-									<p class="subtitle">@vlad_dobrescu</p>
-								</div>
-							</div>
-
-								<small>Jul 27 - 2 min read</small>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="column is-4">
-					<div class="card">
-						<div class="card-image">
-							<figure class="image is-16by9">
-								<img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-							</figure>
-						</div>
-						<div class="card-content">
-							<div class="media">
-								<div class="media-left">
-									<p class="tags">#css #php #javascript</p>
-								</div>
-							</div>
-							<div class="content has-text-left">
-								<router-link :to="{ name: 'blogSingle' }"><h2>Article Title</h2></router-link>
-								<p class="excerpt">In the next couple of months we’ll be
-								reincorporating the Ghost Foundation in Singapore and closing down all operations in...</p>
+								<router-link :to="{ name: 'blogSingle' }"><h2>{{post.title}}</h2></router-link>
+								<p class="excerpt">{{post.post_body}}</p>
 							<div class="columns author">
 								<div class="column is-mobi is-3">
 									<figure class="image is-64x64">
@@ -173,20 +71,29 @@
 
 <script>
 import axios from 'axios'
+import {postsUrl} from '../../api'
+
+// Show/hide menu item
+$(document).ready(function () {
+    var target = $(".auth");
+    var user = window.localStorage.getItem('authUser');
+    console.log(target, user);
+    if(user == null){
+        target.css('display','none');
+
+    };
+});
+
 export default {
 	name: 'blog',
-	data: ()=>({
-		test: [],
-		errors: []
+	data:()=>({
+		posts: []
 	}),
 	created() {
-		axios.get('http://backend.app/api/test')
+		axios.get(postsUrl)
 			.then(response =>{
-				this.test = response.data
-		})
-		.catch(e => {
-			this.errors.push(e);
-		})
+				this.posts = response.data.posts;
+			})
 	}
 }
 </script>
@@ -194,6 +101,12 @@ export default {
 <style scoped lang="css">
 .column.is-4{
 	display: inline-block;
+}
+.excerpt{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 h2{
 	font-size: 1.5em;

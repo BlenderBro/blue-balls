@@ -9,7 +9,7 @@ import Blog from '@/components/pages/Blog'
 import blogSingle from '@/components/pages/Blog-Single'
 import contact from '@/components/pages/Contact'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
 	mode: 'history',
@@ -22,4 +22,4 @@ export default new Router({
 		{ path: '/blog', name: 'blog', component: Blog },
 		{ path: '/blog/single', name: 'blogSingle', component: blogSingle }
 	]
-})
+});
