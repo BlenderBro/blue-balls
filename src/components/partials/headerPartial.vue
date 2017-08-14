@@ -78,7 +78,6 @@
 <style scoped lang="css">
     .navbar-item.is-tab button{
         color: var(--aqua);
-        /*font-weight: 600;*/
         font-size: .9em;
         cursor: pointer;
         text-decoration: none;

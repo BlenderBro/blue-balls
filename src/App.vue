@@ -16,7 +16,7 @@ export default {
 	components: {
 		headerPartial,
 		Foot
-	},
+	}
 }
 </script>
 

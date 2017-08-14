@@ -7,7 +7,7 @@
 					<div class="columns has-text-centered">
 						<div class="column">
 							<h2 class="title">Blog</h2>
-							<button class="auth">Add Post</button>
+							<a class="auth button is-primary is-focused"><router-link :to="{ name: 'add-post' }">Add a new Post</router-link></a>
 						</div>
 					</div>
 				</div>
@@ -77,11 +77,9 @@ import {postsUrl} from '../../api'
 $(document).ready(function () {
     var target = $(".auth");
     var user = window.localStorage.getItem('authUser');
-    console.log(target, user);
     if(user == null){
         target.css('display','none');
-
-    };
+    }
 });
 
 export default {
@@ -101,6 +99,9 @@ export default {
 <style scoped lang="css">
 .column.is-4{
 	display: inline-block;
+}
+a{
+    color: white;
 }
 .excerpt{
     overflow: hidden;

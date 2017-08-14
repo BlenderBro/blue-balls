@@ -5,8 +5,6 @@ import App from './App'
 import router from './router'
 import NProgress from 'nprogress'
 
-var VueMaterial = require('vue-material')
-
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
@@ -14,12 +12,15 @@ router.beforeEach((to, from, next) => {
 	window.scrollTo(0,0);
 	next();
 	NProgress.done()
-})
+});
+
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
-})
+  components: {
+      App,
+  }
+});

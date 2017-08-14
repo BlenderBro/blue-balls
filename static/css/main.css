@@ -20,20 +20,9 @@
 * 		TYPOGRAPHY
 ----------------------------*/
 html *{
-	font-family: 'Nunito Sans', sans-serif !important;
+	font-family: 'Nunito Sans', sans-serif;
 
 }
-@font-face {
-	font-family: 'FontAwesome';
-	src: url('/assets/font-awsome/fonts/fontawesome-webfont.eot');
-	src: url('/assets/font-awsome/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('/assets/font-awsome/fonts/fontawesome-webfont.woff') format('woff'),
-		 url('/assets/font-awsome/fonts/fontawesome-webfont.ttf') format('truetype'),
-		 url('/assets/font-awsome/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
- }
-
 h1, h2, h3, h4, h5 {
 	color: var(--titlu);
 }
@@ -109,6 +98,7 @@ p.subtitle{
 .columns.recomended{
 	background-color: #fafafa !important;
 }
+/*Add Post page*/
 @media screen and (max-width: 930px){
 	/*BLOG PAGE STYLES*/
 	p.tags{

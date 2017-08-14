@@ -8,6 +8,7 @@ import Estimator from '@/components/pages/Estimator'
 import Blog from '@/components/pages/Blog'
 import blogSingle from '@/components/pages/Blog-Single'
 import contact from '@/components/pages/Contact'
+import AddPost from '@/components/pages/AddPost'
 
 Vue.use(Router);
 
@@ -20,6 +21,7 @@ export default new Router({
 		{ path: '/contact', name: 'contact', component: contact },
 		{ path: '/estimator', name: 'Estimator', component: Estimator },
 		{ path: '/blog', name: 'blog', component: Blog },
+		{ path: '/blog/add-post', name: 'add-post', component: AddPost },
 		{ path: '/blog/single', name: 'blogSingle', component: blogSingle }
 	]
 });

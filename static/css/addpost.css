@@ -1,0 +1,23 @@
+.mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset{
+    color: var(--subtitlu);
+}
+h1{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    padding-bottom: .7em;
+    color: var(--titlu);
+    font-weight: 600;
+    line-height: 1.125;
+}
+h2{
+    /*padding-top: 2em;*/
+    padding-bottom: 1.5em;
+    font-size: 1.8em;
+    font-weight: 600;
+    font-family: 'Lora', serif !important;
+    color: var(--titlu);
+}
+blockquote {
+    padding-left: 4px;
+    border-left: 2px solid gray;
+}
