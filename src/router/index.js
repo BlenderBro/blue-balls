@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import lost_page from '@/components/errors/404'
 import login from '@/components/pages/Login'
 import LandingPage from '@/components/pages/LandingPage'
+import About from '@/components/pages/About'
 import Estimator from '@/components/pages/Estimator'
 import Blog from '@/components/pages/Blog'
 import blogSingle from '@/components/pages/Blog-Single'
@@ -18,6 +19,7 @@ export default new Router({
 		{ path: '*', component: lost_page },
 		{ path: '/login', component: login},
 		{ path: '/', name: 'LandingPage', component: LandingPage },
+		{ path: '/about', name: 'about', component: About },
 		{ path: '/contact', name: 'contact', component: contact },
 		{ path: '/estimator', name: 'Estimator', component: Estimator },
 		{ path: '/blog', name: 'blog', component: Blog },

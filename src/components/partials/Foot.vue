@@ -24,6 +24,7 @@
 export default {
 	name: 'Foot'
 }
+console.log('footer');
 </script>
 
 <style scoped lang="css">

@@ -6,9 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 test/unit/coverage
 src/env.js
-_ign-README.md
 # Editor directories and files
 .idea
+*.md
 *.suo
 *.ntvs*
 *.njsproj

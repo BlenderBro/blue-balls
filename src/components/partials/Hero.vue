@@ -4,7 +4,7 @@
 			<div class="container">
 				<div class="columns">
 					<div class="column is-half">
-						<h1 class="title">Bring your ideea to life!</h1>
+						<h1 class="title">Bring your ideas to life!</h1>
 						<h2 class="subtitle"><router-link class="button is-primary is-medium" to="/estimator">Request a Quote</router-link></h2>
 					</div>
 					<div class="column">
