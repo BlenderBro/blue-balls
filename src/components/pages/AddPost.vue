@@ -65,10 +65,10 @@
     });
 
     //disable footer for a no-distractions writing experience
-    $(document).ready(function () {
-        var f = $('footer');
-        f.css('display', 'none');
-    });
+//    $(document).ready(function () {
+//        var f = $('footer');
+//        f.css('display', 'none');
+//    });
    // Class swap for responsiveness & crap
     var breakp = $(window).width();
     $(document).ready(function hotSwap() {

@@ -12,7 +12,7 @@
 				</div>
 				<div class="column has-text-right">
 					<ul class="copyright">
-						<li>© Foobar Digital 2017</li>
+						<li>© Fubar Digital 2017</li>
 					</ul>
 				</div>
 			</div>
